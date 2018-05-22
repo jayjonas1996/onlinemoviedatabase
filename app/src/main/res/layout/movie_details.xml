@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jaynaik.onlinemoviedatabase.movie_details">
+
+
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/trailerImg"
+                android:layout_width="match_parent"
+                android:layout_height="211dp"
+                android:maxHeight="150dp"
+
+
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/posterImg"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"
+                android:scaleType="fitCenter"
+                />
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/titleText"
+                        android:layout_width="211dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="21dp"
+                        android:maxHeight="50dp"
+                        android:text="Title"
+                        android:textSize="9pt"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:orientation="horizontal">
+<!--
+                        <ImageView
+
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="9dp"
+                            app:srcCompat="@drawable/star" />
+                        -->
+
+                        <TextView
+                            android:id="@+id/rat_durText"
+                            android:layout_width="203dp"
+                            android:layout_height="27dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:textSize="9pt"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/genreText"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="8dp"
+                        android:textSize="9pt" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:text="Description"
+                android:textSize="12pt"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_marginLeft="10dp"
+                android:lineSpacingExtra="1.5pt"
+                android:layout_marginTop="8dp"
+                android:maxHeight="500dp"
+                android:minHeight="16dp"
+                android:textSize="7pt"
+                />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:text="Cast"
+                android:textSize="12pt"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/castText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="1.5pt"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:maxHeight="700dp"
+                android:minHeight="16dp"
+                android:textSize="7pt"
+                />
+<Button
+    android:id="@+id/writeReview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Write a review"
+    android:background="#2196f3"
+    android:textColor="#ffffff"
+
+
+
+    />
+            <ListView
+                android:id="@+id/reviewsListview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+            <Button
+                android:layout_marginTop="8dp"
+                android:id="@+id/showReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Reviews"
+                android:background="#2196f3"
+                android:textColor="#ffffff"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:textSize="12pt"
+                android:textStyle="bold"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Language: "
+    android:textStyle="bold"
+    />
+                <TextView
+                    android:id="@+id/language_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Release date: "
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/releasedate_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rating: "
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/pgrating_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Directed By:"/>
+            <TextView
+                android:id="@+id/director_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Box Office"
+                android:textSize="12pt"
+                android:textStyle="bold"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Budget: "
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/budget_Text"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gross: "
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gross_Text"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

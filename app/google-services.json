@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "806553101477",
+    "firebase_url": "https://movie-database-sdp.firebaseio.com",
+    "project_id": "movie-database-sdp",
+    "storage_bucket": "movie-database-sdp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806553101477:android:aec90470dabd9be4",
+        "android_client_info": {
+          "package_name": "com.example.jaynaik.onlinemoviedatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806553101477-7jn8e5ihhuqh0iq332tc87u6rkd0cv7v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jaynaik.onlinemoviedatabase",
+            "certificate_hash": "69d08f215700b315a8e7a0f66dafacba6b20f66f"
+          }
+        },
+        {
+          "client_id": "806553101477-i1qj8kpt0t181khvhik867i0k0cfm9la.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoJgSNampoA0V4zHMJQLA79q5HyXB9AmQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806553101477-i1qj8kpt0t181khvhik867i0k0cfm9la.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
